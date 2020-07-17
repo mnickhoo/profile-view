@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-app';
+  title : string = 'todo-app';
+  projects : project[] =[
+    {name:"new Project" , description:"bbbb"},
+    {name:"sample Project" , description:"bbbb"}
+  ];
+  //a service that connect to API and get project category to bind in view
+  /*
+  Category Name , description, Id, channel url , image address 
+
+  */
 }
+
+
+export class project {
+  name : string ;
+  description : string ;
+}
+
